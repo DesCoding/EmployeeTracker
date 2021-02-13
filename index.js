@@ -1,15 +1,15 @@
 //Require modules
-const mysql = require('mysql');
-const inquirer = require('inquirer');
+const mysql = require("mysql");
+const inquirer = require("inquirer");
 
 // Set up mysql local host connection
 const connection = mysql.createConnection({
-    host: 'localhost',
-    
-    port: 3001,
+  host: "localhost",
 
-    user: 'root',
+  port: 3001,
 
-    password: '',
-    database:  '',
+  user: "root",
+
+  password: "",
+  database: "employeeDB",
 });
