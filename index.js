@@ -1,19 +1,25 @@
 //Require modules
-const mysql = require("mysql");
+
+let mysql = require("mysql");
 const inquirer = require("inquirer");
 const table = require("console.table");
-const boxen = require("boxen"),
+const boxen = require("boxen");
 
 // Set up mysql local host connection
 const connection = mysql.createConnection({
   host: "localhost",
 
-  port: 3001,
+  port: 3306,
 
   user: "root",
 
   password: "yoshi",
   database: "employeeDB",
+});
+
+connection.connect((err) => {
+  if (err) throw err;
+  employeeInfo();
 });
 
 //Inquirer questions
@@ -90,6 +96,7 @@ const employeeInfo = () => {
         ORDER BY employees.id`;
         connection.query(query, (err, res) => {
           if (err) throw err;
+          console.log(res);
       
           console.table(res);
           console.log(
@@ -463,15 +470,3 @@ const employeeInfo = () => {
           }
         );
       };
-      
-      connection.connect(() => {
-        console.log("connected as id " + connection.threadId + "\n");
-      
-        console.log(
-          boxen("              - EMPLOYEE MANAGER -                ", {
-            padding: 1,
-            borderStyle: "double",
-          })
-        );
-        employeeInfo();
-      });
