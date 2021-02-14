@@ -1,5 +1,5 @@
-# EmployeeTracker Description
-A command line application that employer's can use to track employees.  Users will be able to add/view/update/delete employees, roles, and departments in a MySQL employee database.
+# Employee Management System
+A command line application that employer's can use to track employees.  Users will be able to add/view/update/employees, roles, and departments in a MySQL employee database.
  
 # Technologies Used
 
@@ -14,7 +14,8 @@ GitHub Repo - https://github.com/DesCoding/EmployeeTracker
 
 # Demo
 
-![Demo](insert gif here)
+![Demo](Assets/EmployeeTrackDemo.gif)
+
 
 
 # MIT License

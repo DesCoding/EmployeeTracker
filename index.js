@@ -465,7 +465,7 @@ const employeeInfo = () => {
                 } else {
                     employeeInfo();
                 };
-                // Store selected employee and corresponding id
+                
               });
           }
         );
