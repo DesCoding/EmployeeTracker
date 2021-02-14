@@ -10,7 +10,8 @@ A command line application that employer's can use to track employees.  Users wi
 
 # Deployment
 
-GitHub Repo - https://github.com/DesCoding/EmployeeTracker
+[GitHub Repo](https://github.com/DesCoding/EmployeeTracker)
+[Video Demo](https://drive.google.com/file/d/1OG5GGrhO3nEbuyAT2ndRUdzlUysQnKfL/view)
 
 # Demo
 
