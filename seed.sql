@@ -1,14 +1,22 @@
 /* Seeds for SQL table.*/
 
-/* Insert 3 Rows into  new table */
 INSERT INTO departments (id, dep_name)
-VALUES (1, "FunTime");
+VALUES (1, "Reynholm Industries Board"),
+(2, "IT");
 
 INSERT INTO roles (id, title, salary, dep_id)
-VALUES (1, "Clown", 10000, 1);
+VALUES (10, "CEO", 600000, 1),
+(20, "Relationship Manager", 130000, 2),
+(30, "IT Technician", 100000, 2);
 
 INSERT INTO manager (id, managerName)
-VALUES (1, "Mark");
+VALUES (100, "Douglas Reynholm"),
+(200, "Jen Barber");
 
 INSERT INTO employees (id, first_name, last_name, role_id, manager_id)
-VALUES (1, "Tony", "Smith", 1, 1);
+VALUES (1, "Douglas", "Reynholm", 10, null),
+(2, "Jen", "Barber", 20, 100),
+(3, "Roy", "Trenneman", 30, 200),
+(4, "Maurice", "Moss", 30, 200);
+
+
